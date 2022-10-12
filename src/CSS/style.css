@@ -70,10 +70,12 @@ header h1 {
   flex-wrap: nowrap;
 }
 #search .left {
+  width: 50%;
+}
+#search .left form {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  width: 50%;
 }
 #search .left label img {
   width: 21px;
@@ -92,7 +94,7 @@ header h1 {
   /* clears the ‘X’ from Internet Explorer */
   /* clears the ‘X’ from Chrome */
 }
-#search .left input input[type=search]::-ms-clear {
+#search .left input::-ms-clear {
   display: none;
   width: 0;
   height: 0;
@@ -116,6 +118,9 @@ header h1 {
   font-size: 16px;
   line-height: 24px;
   color: white;
+}
+#search button:hover {
+  background-color: #60ABFF;
 }
 #search .notFound {
   font-family: "Space Mono";
@@ -146,6 +151,9 @@ main .top img {
 }
 main .top .info {
   width: 75%;
+}
+main .top .info .info_top {
+  gap: 5px;
 }
 main .top .info .info_top .left h2 {
   font-family: "Space Mono";
@@ -193,4 +201,37 @@ main .box .num {
   font-size: 22px;
   line-height: 33px;
   text-transform: uppercase;
+}
+main .bottom {
+  width: 480px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-top: 37px;
+  gap: 19px;
+}
+main .bottom div {
+  width: 220px;
+  justify-content: flex-start;
+}
+main .bottom div:first-child p {
+  margin-left: 22px !important;
+}
+main .bottom div p {
+  font-family: "Space Mono";
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 22px;
+  margin-left: 16px;
+}
+main .bottom div a {
+  font-family: "Space Mono";
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 22px;
+  margin-left: 16px;
+}
+main .bottom div a:hover {
+  text-decoration: underline;
 }/*# sourceMappingURL=style.css.map */

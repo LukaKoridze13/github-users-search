@@ -73,10 +73,14 @@ header {
     flex-wrap: nowrap;
 
     .left {
-        display: flex;
-        justify-content: flex-start;
-        align-items: center;
+
         width: 50%;
+
+        form {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+        }
 
         label {
             img {
@@ -97,7 +101,7 @@ header {
             line-height: 25px;
 
             /* clears the ‘X’ from Internet Explorer */
-            input[type=search]::-ms-clear {
+            &::-ms-clear {
                 display: none;
                 width: 0;
                 height: 0;
@@ -130,6 +134,10 @@ header {
         font-size: 16px;
         line-height: 24px;
         color: white;
+
+        &:hover {
+            background-color: #60ABFF;
+        }
     }
 
     .notFound {
@@ -165,6 +173,7 @@ main {
             width: 75%;
 
             .info_top {
+                gap: 5px;
                 .left {
                     h2 {
                         font-family: 'Space Mono';
@@ -226,6 +235,46 @@ main {
             font-size: 22px;
             line-height: 33px;
             text-transform: uppercase;
+        }
+    }
+
+    .bottom {
+        width: 480px;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        align-items: center;
+        margin-top: 37px;
+        gap: 19px;
+
+        div {
+            width: 220px;
+            justify-content: flex-start;
+
+            &:first-child {
+                p {
+                    margin-left: 22px !important;
+                }
+            }
+
+            p {
+                font-family: 'Space Mono';
+                font-weight: 400;
+                font-size: 15px;
+                line-height: 22px;
+                margin-left: 16px;
+            }
+
+            a {
+                font-family: 'Space Mono';
+                font-weight: 400;
+                font-size: 15px;
+                line-height: 22px;
+                margin-left: 16px;
+                &:hover{
+                    text-decoration: underline;
+                }
+            }
         }
     }
 }

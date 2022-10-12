@@ -1,3 +1,26 @@
+@media (max-width: 768px) {
+  .info_top .right {
+    width: 100%;
+  }
+  main .info_bot {
+    font-family: "Space Mono";
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 25px;
+    width: 100%;
+    margin-top: 24px;
+  }
+  .box,
+.bottom {
+    width: 100% !important;
+  }
+  .box {
+    margin-top: 32px;
+    gap: 0px !important;
+    justify-content: space-around;
+    padding-left: 0px !important;
+  }
+}
 @media (max-width: 480px) {
   #inputSearch {
     font-size: 14px !important;
@@ -16,5 +39,25 @@
   .notFound {
     font-size: 11px !important;
     margin-right: 5px !important;
+  }
+  main {
+    padding: 24px !important;
+  }
+  .top .spaceBetween img {
+    width: 71px !important;
+    height: 71px !important;
+  }
+  h2 {
+    font-size: 16px !important;
+  }
+  main .top .info {
+    width: 144px !important;
+  }
+  main .top .info .info_top .right p {
+    font-size: 13px;
+  }
+  .top .spaceBetween {
+    justify-content: flex-start;
+    gap: 19px;
   }
 }/*# sourceMappingURL=responsive.css.map */

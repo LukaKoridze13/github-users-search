@@ -8,14 +8,19 @@ export default function Search(props) {
     const [foundUser, setFoundUser] = useState(null)
     const [found, setFound] = useState(false)
     const [width, setWidth] = useState('80%')
+    const [show,setShow] = useState(false)
+    let input = React.createRef()
+    let usemode = useMode
     function change(e) {
         setUser(e.target.value)
     }
     function clear() {
         user === 'Search GitHub username…' && setUser('')
+        user === 'GitHub username…' && setUser('')
+
     }
     function notFound() {
-        if (foundUser !== null && found === false) {
+        if (show) {
             return <p className='notFound'>No results</p>
         }
     }
@@ -36,21 +41,37 @@ export default function Search(props) {
             })
             setFound(true)
             setWidth('80%')
+            setShow(false)
+            props.setFetched(true)
         } else {
             setWidth('50%')
             setFound(false)
+            setShow(true)
+            props.setFetched(true)
+
         }
     }
-
+    function color() {
+        if (user === 'Search GitHub username…' || user === 'GitHub username…') {
+            return '#4B6A9B'
+        } else if (context.mode === 'light') {
+            return '#222731'
+        } else {
+            return 'white'
+        }
+    }
     return (
         <div id='search' className='spaceBetween' style={{ backgroundColor: useMode('#FEFEFE', '#1E2A47', context.mode), boxShadow: useMode('0px 16px 30px -10px rgba(70, 96, 187, 0.198567)', 'none', context.mode) }}>
             <div className='left' style={{ width }}>
-                <label style={{ cursor: 'pointer' }} htmlFor="inputSearch"><img src={search} alt="Search" /></label>
-                <input style={{ color: useMode('#4B6A9B', 'white', context.mode) }} type="search" id='inputSearch' name='inputSearch' value={user} onChange={change} onClick={clear} />
+                <form autoComplete="off" onSubmit={(e) => { e.preventDefault(); getUser(); props.setFetched(false) }}>
+                    <label style={{ cursor: 'pointer' }} htmlFor="inputSearch"><img src={search} alt="Search" /></label>
+                    <input ref={input} autoComplete="off" style={{ color: color() }} type="search" id='inputSearch' name='inputSearch' value={user} onChange={change} onClick={clear} />
+                </form>
+
             </div>
             <div className='center'>
                 {notFound()}
-                <button onClick={getUser} style={{ cursor: 'pointer' }}>Search</button>
+                <button onClick={() => { getUser(); props.setFetched(false) }} style={{ cursor: 'pointer' }}>Search</button>
             </div>
         </div>
     )
