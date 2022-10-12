@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/github-users-search/static/css/main.41645ca5.css",
+    "main.js": "/github-users-search/static/js/main.eb610de2.js",
+    "static/js/787.f5711339.chunk.js": "/github-users-search/static/js/787.f5711339.chunk.js",
+    "static/media/icon-sun-hover.svg": "/github-users-search/static/media/icon-sun-hover.b74f5fa3450b7592a18501026037d979.svg",
+    "static/media/icon-sun.svg": "/github-users-search/static/media/icon-sun.f28a8996f9959c40bdff14d5a43c08d8.svg",
+    "static/media/icon-website-dark.svg": "/github-users-search/static/media/icon-website-dark.dc91d1a5be09045ae4a6d73c26f8dbe9.svg",
+    "static/media/icon-website.svg": "/github-users-search/static/media/icon-website.b7923f6c1dae9717c079c60d8a5c82e5.svg",
+    "static/media/icon-company-dark.svg": "/github-users-search/static/media/icon-company-dark.2ce67937f1df462989bd0bf3797e55d1.svg",
+    "static/media/icon-company.svg": "/github-users-search/static/media/icon-company.6f78ffb334b191c8ed54d0c2a6f7cc25.svg",
+    "index.html": "/github-users-search/index.html",
+    "static/media/icon-twitter-dark.svg": "/github-users-search/static/media/icon-twitter-dark.cee215603274d24ab062a1f4066b84c8.svg",
+    "static/media/icon-twitter.svg": "/github-users-search/static/media/icon-twitter.f6a2a695fbb260b28a9fd67dd4179ea5.svg",
+    "static/media/icon-moon-hover.svg": "/github-users-search/static/media/icon-moon-hover.9af0056115637a02d37507bc6f94fe16.svg",
+    "static/media/icon-moon.svg": "/github-users-search/static/media/icon-moon.cce754cec46d095fd3ce12737f38694b.svg",
+    "static/media/icon-search.svg": "/github-users-search/static/media/icon-search.0cc0c98424cc75d5e1dfbb9e3abb6785.svg",
+    "static/media/icon-location-dark.svg": "/github-users-search/static/media/icon-location-dark.ccae2986114134e1f54166f7f5d720c6.svg",
+    "static/media/icon-location.svg": "/github-users-search/static/media/icon-location.f11c5487a9922cbad40a27e8cc1cfaee.svg",
+    "main.41645ca5.css.map": "/github-users-search/static/css/main.41645ca5.css.map",
+    "main.eb610de2.js.map": "/github-users-search/static/js/main.eb610de2.js.map",
+    "787.f5711339.chunk.js.map": "/github-users-search/static/js/787.f5711339.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.41645ca5.css",
+    "static/js/main.eb610de2.js"
+  ]
+}
